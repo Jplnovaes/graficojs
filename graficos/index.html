@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="stylo.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+   
+    <h1>Informações</h1>
+    
+    <label>Departamento: </label>
+    <input type="text" size="50" id="nomes"><br><br>
+    <label>Quantidade: </label>
+    <input type="number" size="50" id="quantidade"><br><br>
+
+     <button type="button" class="btn btn-primary" onclick="salvar()">Salvar</button>
+    
+    <button type="button" class="btn btn-primary" onclick="ve()" >Ver gráfico</button>
+
+    <h2>Itens Cadastrados:</h2>
+
+    <div class="grafico">
+        <canvas id="myChart"></canvas>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="js.js"></script>        
+</body>
+</html>
